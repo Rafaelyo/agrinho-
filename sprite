@@ -1,0 +1,21 @@
+class sprite {
+    constructor({ position, dimension }) {
+        this.position = position
+        this.width = dimensions.width
+        this.heigth = dimensions.heigth
+    }
+    draw() {
+        ctx.fillRect(this.position.x,)
+    }
+}
+
+const player = new sprite ({
+    position: {
+        x: 0,
+        y: 0
+    },
+    dimensions: {
+        width: 50,
+        heigth: 150
+    }
+})
