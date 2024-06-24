@@ -1,18 +1,31 @@
+const gravity = 0,6
+
 class sprite {
     constructor({ position, dimension }) {
         this.position = position
+        this.velocity = velocity
         this.width = dimensions.width
         this.heigth = dimensions.heigth
     }
     draw() {
-        ctx.fillRect(this.position.x,)
+        ctx.fillStyle = "white"
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.heigth)
+    }
+    update() {
+        this.position.x = this.velocity.x 
+        this.position.y = this.velocity.y 
     }
 }
 
 const player = new sprite ({
     position: {
+        x: 100,
+        y: 100
+    },
+    velocity: {
         x: 0,
-        y: 0
+        y: 2
+
     },
     dimensions: {
         width: 50,
